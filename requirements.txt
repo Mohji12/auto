@@ -1,0 +1,11 @@
+uvicorn
+fastapi
+python-multipart
+python-dotenv
+pandas
+openpyxl
+boto3
+mangum
+pymysql
+gunicorn
+requests
