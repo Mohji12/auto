@@ -9,6 +9,13 @@ def send_email(to_email: str, subject: str, body: str, banner_items: list):
     Sends email using ZeptoMail REST API.
     This is more reliable than SMTP in cloud environments like Railway or AWS Lambda.
     """
+    ZEPTO_TOKEN = "PHtE6r0NQr/tgjUv+0RS5qC6QpalMo4uqe1jeFVCsI5FWPYCGk1Sqd4ukmfhr00jXPURHKHKwN9v4OmZserXdDy5YWxOD2qyqK3sx/VYSPOZsbq6x00Zsl4afkLeUYHvcdZo1ifSvdvdNA=="
+    SENDER_EMAIL = os.getenv("SENDER_EMAIL", "support@harishcriticalcareclasses.com")
+    SENDER_NAME = os.getenv("SENDER_NAME", "Harish Critical Care Classes")
+    # Endpoint for .in region
+    API_URL = "https://api.zeptomail.in/v1.1/email"
+
+    
     # ZeptoMail API Configuration
     # We use the same token as provided for SMTP
 
