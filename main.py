@@ -36,6 +36,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+s3_client = boto3.client(
+    's3',
+    aws_access_key_id="AKIAW5DSKKWG5B7MKE6E",
+    aws_secret_access_key="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",
+    region_name="ap-south-1"
+)
 
 
 # S3 Configuration
